@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
+    <!-- css -->
     <style>
         *{
             margin: 0;
@@ -28,16 +29,17 @@
         .content{
             margin: auto;
             border-radius: 8px;
-            min-width: 400px;
             text-align: center;
             padding: 32px 24px;
+            max-width: 400px;
+            width: 90%;
         }
 
         .list{
             margin-top: 48px;
         }
         .card{
-            height: 60px;
+            min-height: 60px;
             background: url("bg_card.jpg");
             border-radius: 8px;
             display: flex;
@@ -45,6 +47,10 @@
             color: #fff;
         }
         .left{
+            flex: 4;
+            margin: auto;
+        }
+        .right{
             flex: 1;
         }
         .header{
@@ -60,6 +66,8 @@
         .anh {
             height: 60px;
             width: 90px;
+            padding: 4px 4px 0px;
+            border-radius: 13px;
         }
         a + a{
             margin-top: 24px;
@@ -113,5 +121,22 @@
         </div>
     </div>
 
+    <!-- js -->
+    <script>
+        var heightEle = document.querySelectorAll('.left');
+        var selectImg = document.querySelectorAll('.anh');
+        var heightImg = 0;
+        // chọn thẻ cao nhất
+        for (var i = 0; i < heightEle.length; i++) {
+           if (heightImg < heightEle[i].clientHeight){
+               heightImg = heightEle[i].clientHeight;
+           }
+        }
+        // set độ cao ảnh tương ứng
+        for (var i = 0; i < selectImg.length; i++){
+            selectImg[i].style.height = heightImg + 'px';
+        }
+        
+    </script>
 </body>
 </html>
