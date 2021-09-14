@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0A0C1B;
+    color:#fff;
+    display: flex;
+    height:100vh;
+}
+
+.card{
+    border-radius: 8px;
+    background-color: #1C1938;
+    margin: auto 10%;
+    overflow: hidden;
+    display: flex;
+}
+
+.left{
+    flex: 1;
+}
+
+.content{
+    padding: 32px;
+}
+
+.header{
+    font-size: 24px;
+}
+.header strong{
+    color: #70429A;
+}
+
+.desc{
+    margin-top: 32px;
+    margin-bottom: 64px;
+    line-height: 1.6;
+}
+
+.thongso{
+    display: flex;
+}
+
+.thongso ul{
+    margin: auto;
+}
+
+.thongso__header{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.thongso__body{
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-size: 12px;
+    
+}
+
+.right{
+    flex: 1;
+}
+
+.img-cover{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(240deg) saturate(600%) contrast(0.8);
+}
+
+
+@media (max-width: 920px) {
+    #main{
+        height: 100%;
+        padding: 64px;
+    }
+
+    .card{
+        flex-direction: column-reverse;
+    }   
+    .thongso{
+        flex-direction: column;
+    }
+    .thongso ul + ul {
+        margin-top: 32px;
+    }
+    
+}
