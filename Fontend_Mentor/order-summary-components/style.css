@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mt-12{
+    margin-top: 12px;
+}
+
+#main{
+    background-color: #D6E1FF;
+    display: flex;
+    font-family: -webkit-pictograph;
+    height: 100vh;
+}
+
+.the{
+    width: 390px;
+    height: 570px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.nd{
+    margin: 24px 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gt{
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.bai-hat{
+    display: flex;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 24px auto;
+    width: 300px;
+    
+}
+
+.bai-hat__icon{
+    flex: 1;
+}
+
+.bai-hat__gt{
+    flex: 3;   
+    text-align-last: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.bai-hat__gt_gia{
+    opacity: 0.8;
+}
+
+.bai-hat__thaydoi{
+    color: #4439bd;
+    font-weight: 600;
+    flex: 2;
+    margin: auto;
+    text-decoration: underline;
+
+}
+
+.btn button{
+    width: 300px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #4439bd;
+    box-shadow: 0px 11px 13px rgba(0, 0, 0,0.2);
+}
+
+.cant-order{
+    color: #132b6ea8;
+    font-weight: 600;
+}
+
+.bai-hat__thaydoi:hover,
+.btn button:hover,
+.cant-order p:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 723px){
+    .bai-hat__thaydoi,
+    .cant-order p{
+        padding: 10px;
+        display: inline-block;
+    }
+    .btn button{
+        height: 48px;
+        font-size: 16px;
+    }
+
+}
