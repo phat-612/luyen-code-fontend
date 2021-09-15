@@ -78,7 +78,7 @@ ul{
 @media (max-width: 920px) {
     #main{
         height: 100%;
-        padding: 64px;
+        padding: 64px 0;
     }
 
     .card{
