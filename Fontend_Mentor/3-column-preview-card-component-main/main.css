@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    min-height: 100vh;
+    display: flex;
+}
+
+.content{
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    
+}
+
+.card{
+    width: 300px;
+    max-width: 31vw;
+}
+
+.in-card {
+    padding: 32px;
+}
+.in-card__header {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: #fff;
+}
+.in-card__decs{
+    color: #fff;
+    line-height: 22px;
+    margin-top: 24px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn{
+    margin-top: 56px;
+}
+
+.btn button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+.btn button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.card-1{
+    background-color: hsl(31, 77%, 52%);
+}
+.card-2{
+    background-color: hsl(184, 100%, 22%);
+}
+.card-3{
+    background-color: hsl(179, 100%, 13%);
+}
+.btn-1 button{
+    color: hsl(31, 77%, 52%);
+}
+.btn-2 button{
+    color: hsl(184, 100%, 22%);
+}
+.btn-3 button{
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 723px) {
+    .content{
+        flex-direction: column;
+        padding: 84px 0;
+    }
+    .card{
+        width: 90vw;
+        max-width: 320px;
+        border-radius: 8px;
+    }
+    .card + .card{
+        margin-top: 12px;
+    }
+}
