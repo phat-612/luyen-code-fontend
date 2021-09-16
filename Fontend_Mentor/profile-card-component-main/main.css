@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    min-height: 100vh;
+    background: url(images/bg-pattern-top.svg);
+    display: flex;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.card{
+    width: 300px;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+}
+.avata{
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.avata img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.top-card{
+    height: 120px;
+    background: url(images/bg-pattern-card.svg);
+}
+.mid-card{
+    height: 160px;
+}
+.content{
+    padding-top: 64px;
+    text-align: center;
+}
+.content__header h1{
+    display: inline-block;
+    font-size: 18px;
+    opacity: 0.9;
+}
+h1 strong{
+    opacity: 0.7;
+}
+.content__desc{
+    opacity: 0.7;
+}
+.bot-card{
+    height: 80px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+    margin: auto;
+}
